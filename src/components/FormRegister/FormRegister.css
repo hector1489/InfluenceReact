@@ -19,6 +19,7 @@
 
 .form-label {
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .section-form ul {
@@ -68,4 +69,9 @@
 
 .section-form button[type="submit"]:hover {
   background-color: var(--color-button-blue-hover);
+}
+
+.section-form button[disabled] {
+  background-color: #ccc;
+  cursor: not-allowed;
 }

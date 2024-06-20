@@ -13,7 +13,7 @@ const NavBar = () => {
 
     <Navbar className='navBar' fixed='top'>
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand >
           <a href="https://hector1489.github.io/InfluenceApp/#" className="logo" target="_blank" rel="noopener noreferrer">
             <i className="fa-brands fa-instagram"></i>
           </a>

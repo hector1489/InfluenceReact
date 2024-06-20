@@ -16,6 +16,8 @@ const FormRegister = () => {
     user_instagram: ''
   })
 
+  const [isSubmitting, setIsSubmitting] = useState(false)
+
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = event.target;
     setFormData({
@@ -26,6 +28,13 @@ const FormRegister = () => {
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
+
+    if (!formData.user_name || !formData.user_direction || !formData.user_mail || !formData.user_instagram) {
+      alert('Por favor, complete todos los campos.')
+      return;
+    }
+
+    setIsSubmitting(true)
 
     fetch('/API para form', {
       method: 'POST',
@@ -43,12 +52,15 @@ const FormRegister = () => {
         console.error('Error:', error);
         alert('Hubo un error al enviar el formulario.')
       })
+      .finally(() => {
+        setIsSubmitting(false)
+      })
   }
 
   return (
     <section className="section-form">
       <form id="user-form" onSubmit={handleSubmit}>
-        <label className="form-label">Registrarse</label>
+        <h3 className="form-label">Registrarse</h3>
         <ul>
           <li>
             <label htmlFor="name">Nombre:</label>
@@ -58,6 +70,7 @@ const FormRegister = () => {
               name="user_name"
               value={formData.user_name}
               onChange={handleChange}
+              required
             />
           </li>
           <li>
@@ -68,6 +81,7 @@ const FormRegister = () => {
               name="user_direction"
               value={formData.user_direction}
               onChange={handleChange}
+              required
             />
           </li>
           <li>
@@ -78,6 +92,7 @@ const FormRegister = () => {
               name="user_mail"
               value={formData.user_mail}
               onChange={handleChange}
+              required
             />
           </li>
           <li>
@@ -88,10 +103,13 @@ const FormRegister = () => {
               name="user_instagram"
               value={formData.user_instagram}
               onChange={handleChange}
+              required
             />
           </li>
           <li>
-            <button type="submit">Enviar</button>
+            <button type="submit" disabled={isSubmitting}>
+              {isSubmitting ? 'Enviando...' : 'Enviar'}
+            </button>
           </li>
         </ul>
       </form>

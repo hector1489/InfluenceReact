@@ -1,0 +1,27 @@
+.divider {
+  width: 100%;
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+
+hr {
+  width: 65%;
+  height: 3px;
+  background-color: var(--color-text-yellow);
+}
+
+.container-Home {
+  padding: 2rem;
+}
+
+.container-arrow {
+  width: 100%;
+  height: auto;
+  justify-content: end;
+  align-items: center;
+}
+
+.container-arrow i {
+  color: var(--color-text-yellow);
+}

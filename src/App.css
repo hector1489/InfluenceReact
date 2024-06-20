@@ -1,0 +1,88 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+
+:root {
+  --color-background-dark: #040404;
+  --color-background-blue: #0856E1;
+  --color-text-yellow: #FBF969;
+  --color-text-green: #8DC53B;
+  --color-background-light-gray: #6D6D6D;
+  --color-background-form: #fff;
+  --color-button-blue: #007bff;
+  --color-button-blue-hover: #0056b3;
+  --color-border-blue: #0856E1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background: var(--color-background-dark);
+  background: linear-gradient(to right, var(--color-background-dark), var(--color-background-blue));
+  color: var(--color-text-yellow);
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .main-navigation {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .main-navigation ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .main-navigation ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .main-navigation ul li a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .main-navigation.active {
+    display: flex;
+  }
+
+  .section-description {
+    flex-direction: column-reverse;
+  }
+
+  #awards-table-body {
+    flex-direction: column;
+  }
+
+  tr {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  td {
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
+

@@ -1,0 +1,18 @@
+.navBar {
+    background: var(--color-background-dark);
+    color: var(--color-text-yellow);
+}
+
+.text-color-one {
+    color: var(--color-text-yellow);
+  }
+  
+  .text-color-two {
+    color: var(--color-text-green);
+  }
+
+
+.navbar-brand i {
+  font-size: 30px;
+  color: var(--color-text-yellow);
+}

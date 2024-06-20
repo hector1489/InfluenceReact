@@ -1,0 +1,59 @@
+.section-awards {
+  width: 100%;
+  height: auto;
+  margin: 70px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#awards-table-body {
+  width: 100%;
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+tr {
+  display: flex;
+  justify-content: space-around;
+}
+
+td {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+td h3 {
+  margin: 10px 0;
+  color: var(--color-text-yellow);
+}
+
+td p {
+  margin: 10px 0;
+  color: var(--color-text-green);
+  font-weight: bold;
+}
+
+td img {
+  max-width: 300px;
+  height: auto;
+}
+
+td button {
+  width: 50%;
+  min-height: 30px;
+  margin: auto;
+  margin-top: 10px;
+  background-color: var(--color-background-light-gray);
+  color: var(--color-text-yellow);
+  border: none;
+  margin-bottom: 10px;
+}
+
+td button:hover {
+  background-color: var(--color-text-green);
+}

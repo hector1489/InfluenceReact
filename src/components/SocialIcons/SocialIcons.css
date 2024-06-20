@@ -1,0 +1,22 @@
+.section-icons {
+  width: 100%;
+  min-height: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons {
+  width: 200px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  background: linear-gradient(#0000 0%, #ffffff1a 100%);
+}
+
+.social-icons a i {
+  font-size: 3em;
+  color: var(--color-text-yellow);
+}

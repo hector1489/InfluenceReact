@@ -1,0 +1,64 @@
+.container-intro {
+  width: 100%;
+  min-height: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background: var(--color-background-blue);
+  background: linear-gradient(#0000 0%, #ffffff1a 100%);
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+  color: var(--color-text-green);
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.container-intro h5 {
+  color: var(--color-text-yellow);
+}
+
+.description {
+  color: var(--color-text-yellow);
+  margin-bottom: 20px;
+}
+
+.payment-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.payment-button {
+  background-color: var(--color-background-light-gray);
+  color: var(--color-text-yellow);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.payment-button:hover {
+  background-color: var(--color-text-green);
+  transition: all .3s;
+}
+
+.back-button {
+  background-color: var(--color-background-light-gray);
+  color: var(--color-text-yellow);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.back-button:hover {
+  background-color: var(--color-text-green);
+}

@@ -1,5 +1,6 @@
 import { useState, ChangeEvent, FormEvent } from 'react'
 import axios from 'axios'
+import { ENDPOINT } from '../../config/constans'
 import './FormRegister.css'
 
 interface FormData {
@@ -20,7 +21,7 @@ const FormRegister = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = event.target;
+    const { name, value } = event.target
     setFormData({
       ...formData,
       [name]: value
@@ -35,21 +36,21 @@ const FormRegister = () => {
       return
     }
 
-    setIsSubmitting(true);
+    setIsSubmitting(true)
 
     try {
-      const response = await axios.post('/API para form', formData, {
+      const response = await axios.post(ENDPOINT.REGISTER, formData, {
         headers: {
           'Content-Type': 'application/json'
         }
       });
-      console.log('Success:', response.data)
-      alert('Formulario enviado con éxito!')
+      console.log('Success:', response.data);
+      alert('Formulario enviado con éxito!');
     } catch (error) {
-      console.error('Error:', error)
-      alert('Hubo un error al enviar el formulario.')
+      console.error('Error:', error);
+      alert('Hubo un error al enviar el formulario.');
     } finally {
-      setIsSubmitting(false);
+      setIsSubmitting(false)
     }
   }
 

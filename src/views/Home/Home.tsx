@@ -2,6 +2,7 @@ import {
   AwardsTable,
   CardsTicket,
   Header,
+  LotteryTomb,
   PersonalDescription,
   SocialIcons,
 } from '../../components/index.tsx'
@@ -23,6 +24,7 @@ const Home = () => {
       <div className="divider">
         <hr />
       </div>
+      <LotteryTomb />
       <SocialIcons />
       <div className="container-arrow d-flex mt-2">
         <a href="#top" className='m-4'>

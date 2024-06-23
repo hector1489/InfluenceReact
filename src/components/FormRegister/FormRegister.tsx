@@ -1,4 +1,5 @@
 import { useState, ChangeEvent, FormEvent } from 'react'
+import axios from 'axios'
 import './FormRegister.css'
 
 interface FormData {
@@ -16,7 +17,7 @@ const FormRegister = () => {
     user_instagram: ''
   })
 
-  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = event.target;
@@ -26,35 +27,30 @@ const FormRegister = () => {
     })
   }
 
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
 
     if (!formData.user_name || !formData.user_direction || !formData.user_mail || !formData.user_instagram) {
       alert('Por favor, complete todos los campos.')
-      return;
+      return
     }
 
-    setIsSubmitting(true)
+    setIsSubmitting(true);
 
-    fetch('/API para form', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(formData)
-    })
-      .then(response => response.json())
-      .then(result => {
-        console.log('Success:', result);
-        alert('Formulario enviado con éxito!')
-      })
-      .catch(error => {
-        console.error('Error:', error);
-        alert('Hubo un error al enviar el formulario.')
-      })
-      .finally(() => {
-        setIsSubmitting(false)
-      })
+    try {
+      const response = await axios.post('/API para form', formData, {
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      });
+      console.log('Success:', response.data)
+      alert('Formulario enviado con éxito!')
+    } catch (error) {
+      console.error('Error:', error)
+      alert('Hubo un error al enviar el formulario.')
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   return (

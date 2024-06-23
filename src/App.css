@@ -21,7 +21,7 @@
 body {
   width: 100%;
   background: var(--color-background-dark);
-  background: linear-gradient(to right, var(--color-background-dark), var(--color-background-blue));
+  background: linear-gradient(to left, var(--color-background-dark), var(--color-background-blue));
   color: var(--color-text-yellow);
   font-family: 'Roboto', sans-serif;
   margin: 0;

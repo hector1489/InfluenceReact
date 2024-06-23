@@ -1,0 +1,10 @@
+.tomb {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.tomb h4 {
+    color: var(--color-text-yellow);
+}

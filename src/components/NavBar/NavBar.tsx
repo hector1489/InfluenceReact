@@ -10,7 +10,6 @@ const NavBar = () => {
   }
 
   return (
-
     <Navbar className='navBar' fixed='top'>
       <Container>
         <Navbar.Brand >

@@ -6,4 +6,4 @@ interface IRecord {
     quantity?: number;
 }
 
-export default IRecord;
+export default IRecord

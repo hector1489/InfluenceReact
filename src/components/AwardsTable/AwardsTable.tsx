@@ -1,12 +1,12 @@
-import { useContext } from 'react';
-import { AppContext } from '../../context/GlobalState';
+import { useContext } from 'react'
+import { AppContext } from '../../context/GlobalState'
 import './AwardsTable.css'
 
 const AwardsTable = () => {
-  const context = useContext(AppContext);
+  const context = useContext(AppContext)
 
   if (!context) {
-    return null;
+    return null
   }
 
   const { state } = context;
@@ -33,7 +33,7 @@ const AwardsTable = () => {
         </tbody>
       </table>
     </section>
-  );
-};
+  )
+}
 
-export default AwardsTable;
+export default AwardsTable

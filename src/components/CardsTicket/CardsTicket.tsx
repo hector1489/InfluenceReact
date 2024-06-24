@@ -14,7 +14,7 @@ const CardsTicket = () => {
       title: 'Ticket 2',
       price: 10000
     },
-  ];
+  ]
 
   return (
     <section className="section-sale">

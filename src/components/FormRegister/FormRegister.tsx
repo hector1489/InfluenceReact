@@ -44,11 +44,11 @@ const FormRegister = () => {
           'Content-Type': 'application/json'
         }
       });
-      console.log('Success:', response.data);
-      alert('Formulario enviado con éxito!');
+      console.log('Success:', response.data)
+      alert('Formulario enviado con éxito!')
     } catch (error) {
       console.error('Error:', error);
-      alert('Hubo un error al enviar el formulario.');
+      alert('Hubo un error al enviar el formulario.')
     } finally {
       setIsSubmitting(false)
     }

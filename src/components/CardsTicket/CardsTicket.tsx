@@ -1,18 +1,22 @@
+import BasesLegales from "../../assets/BasesLegales/SORTEO-JULIO-2024.pdf"
 import './CardsTicket.css'
 
 const CardsTicket = () => {
+
+  const blFilePath = BasesLegales
+
   const data2 = [
     {
       id: 1,
       image: 'https://storage.googleapis.com/chile-travel-cdn/2021/08/glaciares-shutterstock-ATR393.jpg',
-      title: 'Ticket 1',
-      price: 5000
+      title: 'Un Ticket',
+      price: 2500
     },
     {
       id: 2,
       image: 'https://storage.googleapis.com/chile-travel-cdn/2021/08/glaciares-shutterstock-ATR393.jpg',
-      title: 'Ticket 2',
-      price: 10000
+      title: 'Por 4 Ticket',
+      price: 9000
     },
   ]
 
@@ -25,7 +29,7 @@ const CardsTicket = () => {
         <div className="sales-details">
           <details>
             <summary>Bases Legales.</summary>
-            <p>Y este es el texto oculto que se muestra el texto de las bases legales al desplegarse.</p>
+            <p>Para descarga las bases legales haz click <a href={blFilePath} download="Bases Legales" className="fw-bold">aquí</a>.</p>
           </details>
           <details>
             <summary>Ganadores !.</summary>

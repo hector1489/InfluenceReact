@@ -29,10 +29,12 @@ const Header = () => {
     <section className="section-intro">
       <div className="container-intro">
         <h5>
-          participa en nuestro sorteo de
+          premio para el sorteo de oro de un 
         </h5>
-        <h2 className="title">Producto del sorteo</h2>
-        <p className="description">Contribuye y gana premios increíbles</p>
+        <h2 className="title">
+          Iphone 15 Pro max de 256 GB !!
+        </h2>
+        <p className="description">o dinero $1.100.000, en efectivo o transferencia bancaria.</p>
         <div className="payment-buttons">
           <button
             className="payment-button"

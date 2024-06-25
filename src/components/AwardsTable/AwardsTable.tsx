@@ -19,7 +19,9 @@ const AwardsTable = () => {
             <tr key={item.id}>
               <td>
                 <img src={item.image} alt={`Award Image ${item.id}`} />
+                {item.image2 && <img src={item.image2} alt={`Award Image ${item.id} Second`} />}
                 <h3>{item.title}</h3>
+                <p>{item.description}</p>
                 <p>$ {item.price}</p>
                 <button 
                   className="buy-button" 

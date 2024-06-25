@@ -33,7 +33,7 @@ td h3 {
 }
 
 td p {
-  margin: 10px 0;
+  margin: 10px;
   color: var(--color-text-green);
   font-weight: bold;
 }

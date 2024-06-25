@@ -14,12 +14,9 @@ const PersonalDescription = () => {
             />
           </Col>
           <Col md={6} className="container-description">
-            <h3 className='text-uppercase'>name</h3>
+            <h3 className='text-uppercase fw-bold'>raul wladimir pantoja cea</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit,
-              consequuntur aliquam. Laboriosam accusantium sunt obcaecati magnam
-              animi, quis reprehenderit eligendi minus, voluptate autem
-              exercitationem? Consectetur maxime animi placeat a error.
+              Representante legal de empresa Cronomet Inversiones e Ingeniería SpA.
             </p>
           </Col>
         </Row>

@@ -32,9 +32,9 @@ const Header = () => {
           premio para el sorteo de oro de un 
         </h5>
         <h2 className="title">
-          Iphone 15 Pro max de 256 GB !!
+          Suzuki Swift 1.2 GL!!
         </h2>
-        <p className="description">o dinero $1.100.000, en efectivo o transferencia bancaria.</p>
+        <p className="description">equivalentes a $ 9.000.000, en efectivo o transferencia bancaria.</p>
         <div className="payment-buttons">
           <button
             className="payment-button"

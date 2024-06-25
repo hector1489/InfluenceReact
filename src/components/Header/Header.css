@@ -1,3 +1,4 @@
+
 .section-intro {
   width: 100%;
   min-height: 25rem;
@@ -6,7 +7,7 @@
   align-items: center;
   background: var(--color-background-blue);
   background-image: linear-gradient(#0000 0%, #ffffff1a 100%),
-    url("https://suzuki.cl/media/ubile3pr/desktop-suzuki-swift-12-gl-1-pdp-naranjo-metalico-1.jpg");
+    url("./src/assets/img/metalico-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }

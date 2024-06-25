@@ -20,6 +20,8 @@
 .form-label {
   text-align: center;
   margin-bottom: 20px;
+  color: var(--color-text-green);
+  font-weight: bold;
 }
 
 .section-form ul {

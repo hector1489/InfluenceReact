@@ -30,7 +30,7 @@ const CardsTicket = () => {
       id: 1,
       image: 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-whitetitanium_AV1?wid=5120&hei=2880&fmt=webp&qlt=70&.v=VW44dkRidm5wazhwcGxtL0cyaEJ2VTkrNXBUdUJSK1k4NE5seUtJaW80ZE9GbVRLdFoyOVBmczRNaU91Q1BaNUNUcEx1KzZ4TU5aSmJ4VzBKZWFPSGppOHgxUjM1bG1hRnArQXQ1elR1Rk1aY2JtS1MrU1lZNlNHUVFTemFCTi9XNVZCekptOVp3bldoZUNpK3BudFFnPT0=&traceId=1',
       title: 'Un Ticket',
-      price: 2500
+      price: 3000
     },
     {
       id: 2,

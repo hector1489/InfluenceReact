@@ -12,7 +12,6 @@
 }
 
 .container-intro {
-  width: 90%;
   max-width: 600px;
   height: auto;
   display: flex;
@@ -21,8 +20,9 @@
   text-align: center;
   align-items: center;
   padding: 20px;
-  background: linear-gradient(var(--color-background-dark) 0%, var(--color-background-blue) 100%);
+  background: linear-gradient(to right, var(--color-background-dark) 0%, var(--color-background-blue) 100%);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
 }
 
 .title {

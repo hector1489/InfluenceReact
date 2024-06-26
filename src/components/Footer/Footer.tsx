@@ -6,7 +6,7 @@ const Footer = () => {
 
   return (
     <footer>
-      <p>copyright © 2024 Sorteo de Oro</p>
+      <p>copyright © 2024 <span className='text-uppercase'>grilloven</span></p>
     </footer>
   )
 }

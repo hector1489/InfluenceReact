@@ -17,9 +17,9 @@ const LotteryTomb = () => {
     <div className="tomb">
       <div>
         <h4>Tómbola de 200 Números</h4>
-        <div>
-          <button onClick={handlePickWinner}>Elegir Número Ganador</button>
-          <button onClick={handleClearResult}>Limpiar Resultado</button>
+        <div className='tomb-buttons'>
+          <button className='tomb-button' onClick={handlePickWinner}>Elegir Número Ganador</button>
+          <button className='tomb-button' onClick={handleClearResult}>Limpiar Resultado</button>
         </div>
         {winningNumber !== null && (
           <div>

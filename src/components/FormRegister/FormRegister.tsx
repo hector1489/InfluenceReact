@@ -39,7 +39,7 @@ const FormRegister = () => {
     setIsSubmitting(true)
 
     try {
-      const response = await axios.post(ENDPOINT.REGISTER, formData, {
+      const response = await axios.post(ENDPOINT.URL_EMAIL, formData, {
         headers: {
           'Content-Type': 'application/json'
         }

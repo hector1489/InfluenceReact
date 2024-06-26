@@ -1,9 +1,29 @@
 import { useContext } from 'react'
 import { AppContext } from '../../context/GlobalState'
+import { ENDPOINT } from '../../config/constans'
 import './AwardsTable.css'
 
 const AwardsTable = () => {
   const context = useContext(AppContext)
+  const transbankUrl = ENDPOINT.TRANSBANK_PAYMENT
+  const mercadopagoUrl = ENDPOINT.MERCADOPAGO_PAYMENT
+
+
+  const handlePaymentTransbank = () => {
+    if (transbankUrl) {
+      window.open(transbankUrl, '_blank')
+    } else {
+      console.error('Transbank URL is not defined')
+    }
+  }
+
+  const handlePaymentMercadoPago = () => {
+    if (mercadopagoUrl) {
+      window.open(mercadopagoUrl, '_blank')
+    } else {
+      console.error('Transbank URL is not defined')
+    }
+  }
 
   if (!context) {
     return null
@@ -23,12 +43,20 @@ const AwardsTable = () => {
                 <h3>{item.title}</h3>
                 <p>{item.description}</p>
                 <p>$ {item.price}</p>
-                <button 
-                  className="buy-button" 
-                  onClick={() => alert(`Has comprado ${item.title} por $${item.price}`)}
-                >
-                  Comprar
-                </button>
+                <div>
+                  <button
+                    onClick={handlePaymentTransbank}
+                    aria-label="Pagar con Transbank"
+                  >
+                    <span className='text-uppercase'>p</span>agar con <span>t</span>ransbank
+                  </button>
+                  <button
+                    onClick={handlePaymentMercadoPago}
+                    aria-label="Pagar con Mercado Pago"
+                  >
+                    <span className='text-uppercase'>p</span>agar con Mercado Pago
+                  </button>
+                  </div>
               </td>
             </tr>
           ))}

@@ -1,35 +1,33 @@
-import './Header.css';
-import { useNavigate } from 'react-router-dom';
-import axios from 'axios';
-import { ENDPOINT } from '../../config/constans';
+import './Header.css'
+import { ENDPOINT } from '../../config/constans'
 
-
-interface PaymentMethod {
-  method: 'transbank' | 'mercadopago';
-}
 
 const Header = () => {
-  const navigate = useNavigate();
+  const transbankUrl = ENDPOINT.TRANSBANK_PAYMENT
+  const mercadopagoUrl = ENDPOINT.MERCADOPAGO_PAYMENT
 
-  const handlePayment = async (method: PaymentMethod['method']) => {
-    const endpoint = method === 'transbank' ? ENDPOINT.TRANSBANK_PAYMENT : ENDPOINT.MERCADOPAGO_PAYMENT;
-    
-    try {
-      const response = await axios.post(endpoint, {
-        // Include any necessary data here
-      });
-      console.log(response.data);
-      navigate('/confirm');
-    } catch (error) {
-      console.error('Payment failed:', error);
+
+  const handlePaymentTransbank  = () => {
+    if (transbankUrl) {
+      window.open(transbankUrl, '_blank')
+    } else {
+      console.error('Transbank URL is not defined')
     }
-  };
+  }
+
+  const handlePaymentMercadoPago  = () => {
+    if (mercadopagoUrl) {
+      window.open(mercadopagoUrl, '_blank')
+    } else {
+      console.error('Transbank URL is not defined')
+    }
+  }
 
   return (
     <section className="section-intro">
       <div className="container-intro">
         <h5>
-          premio para el sorteo de oro de un 
+          premio para el sorteo de oro de un
         </h5>
         <h2 className="title">
           Suzuki Swift 1.2 GL!!
@@ -38,14 +36,14 @@ const Header = () => {
         <div className="payment-buttons">
           <button
             className="payment-button"
-            onClick={() => handlePayment('transbank')}
+            onClick={handlePaymentTransbank}
             aria-label="Pagar con Transbank"
           >
             <span className='text-uppercase'>p</span>agar con <span>t</span>ransbank
           </button>
           <button
             className="payment-button"
-            onClick={() => handlePayment('mercadopago')}
+            onClick={handlePaymentMercadoPago}
             aria-label="Pagar con Mercado Pago"
           >
             <span className='text-uppercase'>p</span>agar con Mercado Pago
@@ -53,7 +51,7 @@ const Header = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

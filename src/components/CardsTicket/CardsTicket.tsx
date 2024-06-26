@@ -1,7 +1,27 @@
 import BasesLegales from "../../assets/BasesLegales/SORTEO-JULIO-2024.pdf"
+import { ENDPOINT } from '../../config/constans'
 import './CardsTicket.css'
 
 const CardsTicket = () => {
+  const transbankUrl = ENDPOINT.TRANSBANK_PAYMENT
+  const mercadopagoUrl = ENDPOINT.MERCADOPAGO_PAYMENT
+
+  const handlePaymentTransbank = () => {
+    if (transbankUrl) {
+      window.open(transbankUrl, '_blank')
+    } else {
+      console.error('Transbank URL is not defined')
+    }
+  }
+
+  const handlePaymentMercadoPago = () => {
+    if (mercadopagoUrl) {
+      window.open(mercadopagoUrl, '_blank')
+    } else {
+      console.error('Transbank URL is not defined')
+    }
+  }
+
 
   const blFilePath = BasesLegales
 
@@ -46,9 +66,15 @@ const CardsTicket = () => {
             <p>${item.price}</p>
             <button
               className="buy-button"
-              onClick={() => alert(`Has comprado ${item.title} por $${item.price}`)}
+              onClick={handlePaymentTransbank}
             >
-              Comprar
+              Mercado Pago
+            </button>
+            <button
+              className="buy-button"
+              onClick={handlePaymentMercadoPago}
+            >
+              Transbank
             </button>
           </div>
         ))}

@@ -1,7 +1,5 @@
-export const URLBASE = import.meta.env.VITE_BACKEND_URL ?? "http://localhost:3000";
 
 export const ENDPOINT = {
-  REGISTER: `${URLBASE}/register`,
-  TRANSBANK_PAYMENT: `${URLBASE}/api/payments/transbank`,
-  MERCADOPAGO_PAYMENT: `${URLBASE}/api/payments/mercadopago`,
-};
+  MERCADOPAGO_PAYMENT: 'https://mpago.la/2uo6KmF',
+  TRANSBANK_PAYMENT: 'https://www.webpay.cl/company/134637?utm_source=transbank&utm_medium=portal3.0&utm_campaign=link_portal'
+}

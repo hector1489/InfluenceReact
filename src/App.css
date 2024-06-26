@@ -66,20 +66,6 @@ body {
     flex-direction: column-reverse;
   }
 
-  #awards-table-body {
-    flex-direction: column;
-  }
-
-  tr {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  td {
-    max-width: 300px;
-    margin-bottom: 20px;
-  }
 }
 
 

@@ -19,12 +19,16 @@ table {
 
 tr {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 td {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   text-align: center;
+  max-width: 300px;
+  margin: 20px;
 }
 
 td h3 {
@@ -39,21 +43,37 @@ td p {
 }
 
 td img {
-  max-width: 300px;
+  max-width: 100%;
   height: auto;
 }
 
 td button {
-  width: 50%;
+  width: 100%;
   min-height: 30px;
-  margin: auto;
-  margin-top: 10px;
   background-color: var(--color-background-light-gray);
   color: var(--color-text-yellow);
   border: none;
-  margin-bottom: 10px;
+  cursor: pointer;
 }
 
 td button:hover {
   background-color: var(--color-text-green);
 }
+
+@media (max-width: 768px) {
+  #awards-table-body {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  tr {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  td {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}
+

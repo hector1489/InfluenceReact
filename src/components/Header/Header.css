@@ -6,7 +6,7 @@
   align-items: center;
   background: var(--color-background-blue);
   background-image: linear-gradient(#0000 0%, #ffffff1a 100%),
-    url("../../assets/img/metalico-1.jpg");
+    url("https://www.suzuki.cl/media/b3xml33k/desktop-banner-home-suzuki-swift.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }

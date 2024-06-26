@@ -42,6 +42,14 @@ const AwardsTable = () => {
                 {item.image2 && <img src={item.image2} alt={`Award Image ${item.id} Second`} />}
                 <h3>{item.title}</h3>
                 <p>{item.description}</p>
+                {item.characters && (
+                  <ul>
+                    <label>Atributos destacados :</label>
+                    {item.characters.map((character, index) => (
+                      <li key={index}>{character}</li>
+                    ))}
+                  </ul>
+                )}
                 <p>$ {item.price}</p>
                 <div>
                   <button
@@ -56,7 +64,7 @@ const AwardsTable = () => {
                   >
                     <span className='text-uppercase'>p</span>agar con Mercado Pago
                   </button>
-                  </div>
+                </div>
               </td>
             </tr>
           ))}

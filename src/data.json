@@ -4,7 +4,8 @@
     "image": "https://www.yamahamotos.cl/wp-content/uploads/2022/04/R3A-2022-2-2.jpg",
     "title": "Sorteo de Plata",
     "description": "Al llegar a los 10.000 números vendidos. Puede elegir entre una YAMAHA R3A o 5 Millones de Pesos Chilenos.",
-    "price": 2500
+    "characters": ["321 cc.", "Frenos ABS", "Panel Led"],
+    "price": 3000
   },
   {
     "id": 2,
@@ -12,7 +13,7 @@
     "image2": "https://www.yamahamotos.cl/wp-content/uploads/2022/06/r7_azul-2.jpg",
     "title": "Sorteo de Oro",
     "description": "Al llegar a los 20.000 números vendidos. Puede elegir entre un Suzuki Swift 1.2 GL, una YAMAHA R7 o 9 Millones de Pesos Chilenos.",
-    "price": 2500
+    "price": 3000
   },
   
   {
@@ -20,6 +21,7 @@
     "image": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-whitetitanium_AV1?wid=5120&hei=2880&fmt=webp&qlt=70&.v=VW44dkRidm5wazhwcGxtL0cyaEJ2VTkrNXBUdUJSK1k4NE5seUtJaW80ZE9GbVRLdFoyOVBmczRNaU91Q1BaNUNUcEx1KzZ4TU5aSmJ4VzBKZWFPSGppOHgxUjM1bG1hRnArQXQ1elR1Rk1aY2JtS1MrU1lZNlNHUVFTemFCTi9XNVZCekptOVp3bldoZUNpK3BudFFnPT0=&traceId=1",
     "title": "Sorteo de Bronce",
     "description": "El Ganador puede elegir entre Iphone 15 Pro max de 256 GB o $1.100.000 de pesos en efectivo o transferencia bancaria.",
-    "price": 2500
+    "characters": ["6,7 pulgadas", "256 GB", "chips A17 Pro"],
+    "price": 3000
   }
 ]

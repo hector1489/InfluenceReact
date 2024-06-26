@@ -4,6 +4,7 @@ interface IRecord {
     image2?: string;
     title: string;
     description: string,
+    characters?: string[],
     price: number;
     quantity?: number;
 }

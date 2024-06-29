@@ -1,0 +1,29 @@
+.ganadores-views {
+  width: 100%;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.ganadores-views h3 {
+  margin-bottom: 20px;
+  font-size: 2em;
+  text-align: center;
+}
+
+.ganadores-views button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.ganadores-views button:hover {
+  background-color: #0056b3;
+}

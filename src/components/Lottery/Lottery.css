@@ -1,0 +1,29 @@
+.lottery-section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.sorteo {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 5px;
+  background: linear-gradient(#0000 0%, #ffffff1a 100%);
+  gap: 5px;
+}
+
+.sorteo i {
+  font-size: 30px;
+  color: var(--color-text-yellow);
+}
+
+.sorteo i:hover {
+  color: var(--color-text-green);
+}
+
+
+

@@ -1,6 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap"
 import { ENDPOINT } from '../../config/constans'
 import './Banner.css'
+import imagenLogo from '../../assets/img/hronopremio.png'
 
 const Banner = () => {
   const transbankUrl = ENDPOINT.TRANSBANK_PAYMENT
@@ -28,7 +29,7 @@ const Banner = () => {
 
         <Col xs={12} md={3} className="logo-section">
           <div className="logo-banner">
-            <img src="https://http2.mlstatic.com/D_NQ_NP_608812-MLC54945345860_042023-O.webp" alt="logo" />
+            <img src={imagenLogo} alt="logo" />
           </div>
           <h4>GrellOven</h4>
           <div className="stars">

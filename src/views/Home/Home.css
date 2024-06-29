@@ -1,6 +1,6 @@
 .divider {
   width: 100%;
-  margin: 50px 0;
+  margin: 40px 0;
   display: flex;
   justify-content: center;
 }
@@ -15,13 +15,3 @@ hr {
   padding: 2rem;
 }
 
-.container-arrow {
-  width: 100%;
-  height: auto;
-  justify-content: end;
-  align-items: center;
-}
-
-.container-arrow i {
-  color: var(--color-text-yellow);
-}

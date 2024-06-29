@@ -5,7 +5,6 @@ import dataJson from "../data.json";
 interface IState {
   IsHero: Array<IRecord>;
   IsGalleryServices: Array<IRecord>;
-  IsTestimonials: Array<IRecord>;
 }
 
 interface IContextProps {
@@ -24,7 +23,6 @@ const AppProvider: React.FC<IAppProviderProps> = ({ children }: IAppProviderProp
   const [state, setState] = useState<IState>({
     IsHero: [],
     IsGalleryServices: [],
-    IsTestimonials: [],
   });
 
   useEffect(() => {
@@ -32,7 +30,7 @@ const AppProvider: React.FC<IAppProviderProps> = ({ children }: IAppProviderProp
     setState({
       IsHero: formattedData,
       IsGalleryServices: [],
-      IsTestimonials: [],
+
     });
   }, []);
 

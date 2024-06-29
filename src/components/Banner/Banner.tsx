@@ -44,10 +44,10 @@ const Banner = () => {
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, culpa esse natus consequuntur, inventore sit sequi sunt quis aperiam, maiores laudantium ad eaque assumenda id illum aspernatur eveniet explicabo officiis.</p>
           <div className="btn-presentation">
             <button className="buy-button" onClick={handlePaymentMercadoPago}>
-              Mercado Pago
+              Un Ticket
             </button>
             <button className="buy-button" onClick={handlePaymentTransbank}>
-              Transbank
+              Varios Ticket
             </button>
           </div>
         </Col>

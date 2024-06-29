@@ -25,5 +25,15 @@
   color: var(--color-text-green);
 }
 
+.sorteo button {
+  background-color: var(--color-background-light-gray);
+  color: var(--color-text-yellow);
+  border: none;
+  cursor: pointer;
+}
 
+.sorteo button:hover {
+  background-color: var(--color-text-green);
+  transition: all 0.3s;
+}
 

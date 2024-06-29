@@ -11,19 +11,23 @@
   margin-bottom: 20px;
   font-size: 2em;
   text-align: center;
+  color: var(--color-text-green);
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .bronze-views button {
   margin-top: 20px;
   padding: 10px 20px;
   font-size: 1em;
-  background-color: #007bff;
-  color: white;
-  border: none;
   border-radius: 5px;
+  background-color: var(--color-background-light-gray);
+  color: var(--color-text-yellow);
+  border: none;
   cursor: pointer;
 }
 
 .bronze-views button:hover {
-  background-color: #0056b3;
+  background-color: var(--color-text-green);
+  transition: all 0.3s;
 }

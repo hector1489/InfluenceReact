@@ -13,6 +13,7 @@
     "image2": "https://www.yamahamotos.cl/wp-content/uploads/2022/06/r7_azul-2.jpg",
     "title": "Sorteo de Oro",
     "description": "Al llegar a los 20.000 números vendidos. Puede elegir entre un Suzuki Swift 1.2 GL o 9 Millones de Pesos Chilenos.",
+    "characters": ["Mecánido", "4 cilindros de 1.2", "5 velocidades", "6.000 rpm", "82 HP", "21,9 km/lt"],
     "price": 3000
   },
   {
@@ -29,6 +30,7 @@
     "image2": "https://www.yamahamotos.cl/wp-content/uploads/2022/06/r7_azul-2.jpg",
     "title": "Sorteo de Oro",
     "description": "Al llegar a los 20.000 números vendidos. Puede elegir entre una YAMAHA R7 o 9 Millones de Pesos Chilenos.",
+    "characters": ["689 c.c.", "4 tiempos DOHC", "4 válvulas", "refrigerado por líquido", "8.750 rpm", "Multidisco en aceite"],
     "price": 3000
   }
 ]

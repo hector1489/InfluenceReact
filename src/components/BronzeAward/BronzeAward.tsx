@@ -17,19 +17,21 @@ const BronzeAward = () => {
   }
 
   return (
-    <div className="card">
-      <img src={goldAward.image} alt={goldAward.title} />
-      <div className="card-content">
-        <h2>{goldAward.title}</h2>
-        <p>{goldAward.description}</p>
-        <p>Precio: {goldAward.price} CLP</p>
-        {goldAward.characters && (
-          <ul>
-            {goldAward.characters.map((character, index) => (
-              <li key={index}>{character}</li>
-            ))}
-          </ul>
-        )}
+    <div className="bronze-awards">
+      <div className="card">
+        <img className="card-img" src={goldAward.image} alt={goldAward.title} />
+        <div className="card-img-overlay">
+          <h2>{goldAward.title}</h2>
+          <p>{goldAward.description}</p>
+          <p>Precio: {goldAward.price} CLP</p>
+          {goldAward.characters && (
+            <ul>
+              {goldAward.characters.map((character, index) => (
+                <li key={index}>{character}</li>
+              ))}
+            </ul>
+          )}
+        </div>
       </div>
     </div>
   )

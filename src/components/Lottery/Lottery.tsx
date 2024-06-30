@@ -11,7 +11,7 @@ const Lottery = () => {
 
       <div className="sorteo">
         <h4>Sorte de Bronce</h4>
-        <NavLink to={"/"}>
+        <NavLink to={"/bronce"}>
           <i className="fa-solid fa-medal"></i>
         </NavLink>
         <button onClick={() => navigate('/bronce')}>Sorteo</button> 
@@ -19,7 +19,7 @@ const Lottery = () => {
 
       <div className="sorteo">
         <h4>Sorteo de Plata</h4>
-        <NavLink to={"/"}>
+        <NavLink to={"/plata"}>
           <i className="fa-solid fa-medal"></i>
         </NavLink>
         <button onClick={() => navigate('/plata')}>Sorteo</button> 
@@ -27,7 +27,7 @@ const Lottery = () => {
 
       <div className="sorteo">
         <h4>Sorteo de Oro</h4>
-        <NavLink to={"/"}>
+        <NavLink to={"/oro"}>
           <i className="fa-solid fa-medal"></i>
         </NavLink>
         <button onClick={() => navigate('/oro')}>Sorteo</button> 
@@ -43,7 +43,7 @@ const Lottery = () => {
 
       <div className="sorteo">
         <h4>Ganadores</h4>
-        <NavLink to={"/"}>
+        <NavLink to={"/ganadores"}>
           <i className="fa-solid fa-trophy"></i>
         </NavLink>
         <button onClick={() => navigate('/ganadores')}>Ganadores</button> 

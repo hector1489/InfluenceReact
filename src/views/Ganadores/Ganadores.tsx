@@ -5,7 +5,7 @@ const Ganadores = () => {
   const navigate = useNavigate()
 
   return (
-    <div className='ganadores-views p-2'>
+    <div className='winners-views p-2'>
     <h3>Ganadores</h3>
     <p>welcome</p>
     <button onClick={() => navigate('/')}>Volver a la página principal</button>
